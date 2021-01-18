@@ -83,6 +83,7 @@ Based on `org-agenda-mode-map'.")
 (defvar org-ql-view-list-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "RET") #'org-ql-view-switch)
+    (define-key map (kbd "l") #'org-ql-view-switch)
     (define-key map [mouse-1] #'org-ql-view-switch)
     (define-key map "c" #'org-ql-view-customize)
     map)
